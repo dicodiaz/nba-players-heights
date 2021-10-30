@@ -1,8 +1,8 @@
 {
-  "name": "react-redux-setup",
+  "name": "nba-players-heights",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dicodiaz.me/react-redux-setup",
+  "homepage": "https://dicodiaz.me/nba-players-heights",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
