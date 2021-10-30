@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import findPairs from '../logic/findPairs';
 import { setPlayers } from '../redux/ducks/nbaPlayers';
 
 const Counter = () => {
@@ -23,56 +24,11 @@ const Counter = () => {
     }
   }, [dispatch]);
 
-  // Algorithm to find the pairs in O(n) time complexity
-  const findPairs = () => {
-    const { values } = nbaPlayers;
-    const hashMap = {};
-    const results = [];
-    let count = 0;
-
-    for (let i = 0; i < values.length; i += 1) {
-      const firstPlayer = `${values[i].first_name} ${values[i].last_name}, ${values[i].h_in} in`;
-      const diff = Number(inputValue) - Number(values[i].h_in);
-      if (hashMap[values[i].h_in]) {
-        for (let j = 0; j < hashMap[values[i].h_in].length; j += 1) {
-          const secondPlayer = hashMap[values[i].h_in][j];
-          results.push({ count, firstPlayer, secondPlayer });
-          count += 1;
-        }
-      }
-      if (hashMap[diff]) {
-        hashMap[diff].push(firstPlayer);
-      } else {
-        hashMap[diff] = [firstPlayer];
-      }
-    }
-
-    return results;
-  };
-
-  // Algorithm to find the pairs in O(n**2) time complexity
-  // const findPairsSquareOn = () => {
-  //   const { values } = nbaPlayers;
-  //   const results = [];
-  //   let count = 0;
-  //   for (let i = 0; i < values.length - 1; i += 1) {
-  //     for (let j = i + 1; j < values.length; j += 1) {
-  //       if (Number(values[i].h_in) + Number(values[j].h_in) === Number(inputValue)) {
-  //         const firstPlayer = `${values[i].first_name} ${values[i].last_name}, ${values[i].h_in} in`;
-  //         const secondPlayer = `${values[j].first_name} ${values[j].last_name}, ${values[j].h_in} in`;
-  //         results.push({ count, firstPlayer, secondPlayer });
-  //         count += 1;
-  //       }
-  //     }
-  //   }
-  //   return results;
-  // };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmittedValue(inputValue);
     const startTime = performance.now();
-    setPairs(findPairs());
+    setPairs(findPairs(nbaPlayers, inputValue));
     const endTime = performance.now();
     setTime(Math.round((endTime - startTime) * 1000) / 1000);
     setInputValue('');
