@@ -96,7 +96,7 @@ const Counter = () => {
             to {submittedValue} inches in {time} milliseconds:
           </p>
         ) : (
-          <p>No results found</p>
+          <p>No matches found</p>
         )}
         <ul className="list-unstyled">
           {pairs.map((elem) => (

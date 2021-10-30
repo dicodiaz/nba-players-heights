@@ -1,8 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# NBA Players' Heights
 
-# React-Redux setup
-
-This is a simple yet powerful React-Redux boilerplate for later use as a starting point in other projects. It derives from `create-react-app` with a few modifications, which include installing StyleLint, ESLint, and Bootstrap, removing unimportant files, and adding some content to the remaining files. It features a functional Counter component that implements Redux for state management, using `useSelector` and `useDispatch` hooks.
+The task is to create an application that takes a single integer input. The application will download the raw data from [this API](https://mach-eight.uc.r.appspot.com) and print a list of all pairs of players whose height in inches adds up to the integer input to the application. If no matches are found, the application will print "No matches found". The algorithm to find the pairs has a time complexity of O(n) and a space complexity of O(n). All edge cases are handled appropriately. Unit tests are implemented using Jest. This application is built with JavaScript, React, Redux, and Bootstrap.
 
 ## Mobile
 
@@ -14,30 +12,26 @@ This is a simple yet powerful React-Redux boilerplate for later use as a startin
 
 ## Live Demo
 
-[Live Demo Link](https://dicodiaz.me/react-redux-setup/)
+[Live Demo Link](https://dicodiaz.me/nba-players-heights/)
 
 ## Built With
 
 - React
 - Redux
+- Jest
 - Bootstrap
 - VSCode
 - Git & GitHub
 
 ## Getting Started
 
-To get React and Redux up and running in another project, follow these simple steps:
+To get this project up and running, follow these simple steps:
 
 1. Clone the repository into your machine (Or download the .zip file and extract).
 2. Open the project's folder.
 3. Copy and paste all files and folders except app_screenshot.png, app_screenshot-2.png, MIT.md, and README.md into the other project's root folder.
 4. Run `npm install`
 5. Run `npm start`
-
-### Considerations
-
-- Intended only for use as a starting point in other projects. Do not copy and paste these files into more mature projects as this will overwrite your package.json and package-lock.json files.
-- This project also includes Bootstrap for styling.
 
 ### Setup
 
