@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import reducer from './ducks/counter';
+import reducer from './ducks/nbaPlayers';
 
 const store = createStore(reducer);
 
