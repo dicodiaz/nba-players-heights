@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-redux-setup/static/css/main.0363ec38.chunk.css",
-    "main.js": "/react-redux-setup/static/js/main.cfce5f73.chunk.js",
-    "main.js.map": "/react-redux-setup/static/js/main.cfce5f73.chunk.js.map",
-    "runtime-main.js": "/react-redux-setup/static/js/runtime-main.b12fc5fa.js",
-    "runtime-main.js.map": "/react-redux-setup/static/js/runtime-main.b12fc5fa.js.map",
-    "static/css/2.0a9ec390.chunk.css": "/react-redux-setup/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.2955a75e.chunk.js": "/react-redux-setup/static/js/2.2955a75e.chunk.js",
-    "static/js/2.2955a75e.chunk.js.map": "/react-redux-setup/static/js/2.2955a75e.chunk.js.map",
-    "static/js/3.32db9036.chunk.js": "/react-redux-setup/static/js/3.32db9036.chunk.js",
-    "static/js/3.32db9036.chunk.js.map": "/react-redux-setup/static/js/3.32db9036.chunk.js.map",
-    "index.html": "/react-redux-setup/index.html",
-    "static/css/2.0a9ec390.chunk.css.map": "/react-redux-setup/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.0363ec38.chunk.css.map": "/react-redux-setup/static/css/main.0363ec38.chunk.css.map",
-    "static/js/2.2955a75e.chunk.js.LICENSE.txt": "/react-redux-setup/static/js/2.2955a75e.chunk.js.LICENSE.txt"
+    "main.css": "/nba-players-heights/static/css/main.0363ec38.chunk.css",
+    "main.js": "/nba-players-heights/static/js/main.e34bd177.chunk.js",
+    "main.js.map": "/nba-players-heights/static/js/main.e34bd177.chunk.js.map",
+    "runtime-main.js": "/nba-players-heights/static/js/runtime-main.ea8053c8.js",
+    "runtime-main.js.map": "/nba-players-heights/static/js/runtime-main.ea8053c8.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/nba-players-heights/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.12d287dc.chunk.js": "/nba-players-heights/static/js/2.12d287dc.chunk.js",
+    "static/js/2.12d287dc.chunk.js.map": "/nba-players-heights/static/js/2.12d287dc.chunk.js.map",
+    "static/js/3.a29906f3.chunk.js": "/nba-players-heights/static/js/3.a29906f3.chunk.js",
+    "static/js/3.a29906f3.chunk.js.map": "/nba-players-heights/static/js/3.a29906f3.chunk.js.map",
+    "index.html": "/nba-players-heights/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/nba-players-heights/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.0363ec38.chunk.css.map": "/nba-players-heights/static/css/main.0363ec38.chunk.css.map",
+    "static/js/2.12d287dc.chunk.js.LICENSE.txt": "/nba-players-heights/static/js/2.12d287dc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b12fc5fa.js",
+    "static/js/runtime-main.ea8053c8.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.2955a75e.chunk.js",
+    "static/js/2.12d287dc.chunk.js",
     "static/css/main.0363ec38.chunk.css",
-    "static/js/main.cfce5f73.chunk.js"
+    "static/js/main.e34bd177.chunk.js"
   ]
 }
