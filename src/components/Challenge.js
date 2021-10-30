@@ -10,9 +10,16 @@ const Counter = () => {
   const [pairs, setPairs] = useState([]);
 
   useEffect(() => {
-    fetch('https://mach-eight.uc.r.appspot.com')
-      .then((response) => response.json())
-      .then((data) => dispatch(setPlayers(data)));
+    if (localStorage.getItem('nbaPlayers')) {
+      dispatch(setPlayers(JSON.parse(localStorage.getItem('nbaPlayers'))));
+    } else {
+      fetch('https://mach-eight.uc.r.appspot.com')
+        .then((response) => response.json())
+        .then((data) => {
+          dispatch(setPlayers(data));
+          localStorage.setItem('nbaPlayers', JSON.stringify(data));
+        });
+    }
   }, [dispatch]);
 
   // Algorithm to find the pairs in O(n) time complexity
