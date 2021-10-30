@@ -1,6 +1,12 @@
 // Algorithm to find the pairs in O(n) time complexity
 
 const findPairs = (nbaPlayers, inputValue) => {
+  if (typeof nbaPlayers !== 'object')
+    throw new Error('Wrong type for nbaPlayers argument. It has to be an object.');
+  if (typeof inputValue !== 'string')
+    throw new Error('Wrong type for inputValue argument. It has to be a string.');
+  if (!nbaPlayers.values) throw new Error('nbaPlayers object needs a property with key "values"');
+
   const { values } = nbaPlayers;
   const hashMap = {};
   const results = [];

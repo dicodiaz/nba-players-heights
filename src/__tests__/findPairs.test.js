@@ -2,6 +2,24 @@ import findPairs from '../logic/findPairs';
 import nbaPlayers from '../__mocks__/nbaPlayers';
 
 describe('testing findPairs function', () => {
+  test('testing wrong type for nbaPlayers argument', () => {
+    expect(() => findPairs('nbaPlayers', '139')).toThrow(
+      'Wrong type for nbaPlayers argument. It has to be an object.',
+    );
+  });
+
+  test('testing wrong type for inputValue argument', () => {
+    expect(() => findPairs(nbaPlayers, 139)).toThrow(
+      'Wrong type for inputValue argument. It has to be a string.',
+    );
+  });
+
+  test("testing wrong name for nbaPlayers' property", () => {
+    expect(() => findPairs({ value: [] }, '139')).toThrow(
+      'nbaPlayers object needs a property with key "values"',
+    );
+  });
+
   test('testing input of 139', () => {
     expect(findPairs(nbaPlayers, '139')).toHaveLength(2);
   });
